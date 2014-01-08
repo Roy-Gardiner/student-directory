@@ -2,22 +2,22 @@
 
 
 students = [
- "Berta Gutierrez",
- "Megan Folsom",
- "Rolando Barbella",
- "James Hunter",	
- "Abraham Thomas",
- "Roy Gardiner",	 
- "Jorja Tracy Hung",	
- "Colin Frankish",	
- "yaz Goulamabasse",	
- "Kalle Malmiharju",	
- "Andrey Krahmal",	
- "Biwek Shrestha",	
- "Mihai-Liviu Cojocar",	
- "Makis Otman",
- "Nabin Rai", 
- "Peter Saxton"
+ ["Berta Gutierrez", :November],
+ ["Megan Folsom",:november],
+ ["Rolando Barbella",:november],
+ ["James Hunter",:november],	
+ ["Abraham Thomas",:november],
+ ["Roy Gardiner",:november],	 
+ ["Jorja Tracy Hung",:november],	
+ ["Colin Frankish",:november],	
+ ["yaz Goulamabasse",:november],	
+ ["Kalle Malmiharju",:november],	
+ ["Andrey Krahmal",:november],	
+ ["Biwek Shrestha",:november],	
+ ["Mihai-Liviu Cojocar",:november],	
+ ["Makis Otman",:november],
+ ["Nabin Rai",:november], 
+ ["Peter Saxton",:november]
 ]
 
 def print_header 		
@@ -27,7 +27,7 @@ end
 
 def print(names)
    names.each do |student|
-      puts student
+      puts "#{student[0]} in #{student[1]} cohort"
    end 
 end
 
