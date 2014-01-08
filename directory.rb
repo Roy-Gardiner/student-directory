@@ -1,6 +1,5 @@
 # first, print the list of students
-puts "The Students of my cohort at Makers Academy"
-puts "==========================================="
+
 
 students = [
  "Berta Gutierrez",
@@ -21,10 +20,21 @@ students = [
  "Peter Saxton"
 ]
 
-students.each do |student|
-   puts student
-end   
+def print_header 		
+   puts "The Students of my cohort at Makers Academy"
+   puts "==========================================="
+end
 
-# Then print the total number
+def print(names)
+   names.each do |student|
+      puts student
+   end 
+end
 
-puts "Overall we have #{students.length} fine Students"
+def print_footer(names)
+   puts "Overall we have #{names.length} fine Students"
+end  
+
+print_header
+print(students)
+print_footer(students)
