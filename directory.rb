@@ -2,22 +2,22 @@
 
 
 students = [
- ["Berta Gutierrez", :November],
- ["Megan Folsom",:november],
- ["Rolando Barbella",:november],
- ["James Hunter",:november],	
- ["Abraham Thomas",:november],
- ["Roy Gardiner",:november],	 
- ["Jorja Tracy Hung",:november],	
- ["Colin Frankish",:november],	
- ["yaz Goulamabasse",:november],	
- ["Kalle Malmiharju",:november],	
- ["Andrey Krahmal",:november],	
- ["Biwek Shrestha",:november],	
- ["Mihai-Liviu Cojocar",:november],	
- ["Makis Otman",:november],
- ["Nabin Rai",:november], 
- ["Peter Saxton",:november]
+ {name: "Berta Gutierrez",cohort: :november},
+ {name: "Megan Folsom",cohort: :november},
+ {name: "Rolando Barbella",cohort: :november},
+ {name: "James Hunter",cohort: :november},	
+ {name: "Abraham Thomas",cohort: :november},
+ {name: "Roy Gardiner",cohort: :november},	 
+ {name: "Jorja Tracy Hung",cohort: :november},	
+ {name: "Colin Frankish",cohort: :november},	
+ {name: "yaz Goulamabasse",cohort: :november},	
+ {name: "Kalle Malmiharju",cohort: :november},	
+ {name: "Andrey Krahmal",cohort: :november},	
+ {name: "Biwek Shrestha",cohort: :november},	
+ {name: "Mihai-Liviu Cojocar",cohort: :november},	
+ {name: "Makis Otman",cohort: :november},
+ {name: "Nabin Rai",cohort: :november}, 
+ {name: "Peter Saxton",cohort: :november}
 ]
 
 def print_header 		
@@ -27,7 +27,7 @@ end
 
 def print(names)
    names.each do |student|
-      puts "#{student[0]} in #{student[1]} cohort"
+      puts "#{student[:name]} in #{student[:cohort]} cohort"
    end 
 end
 
