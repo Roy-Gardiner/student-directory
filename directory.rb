@@ -22,13 +22,20 @@ students = [
 ]
 
 def input_students
-
-   print "please enter the names of the Students\n"
-   print "to finish, just hit return twice\n"
    
    students = []
-
+   
+   print "Please enter student information; "
+   print "to finish, just hit return twice\n"
+      
+   print "please enter the name of the student\n"
    name = gets.chomp
+   
+   print "please enter the student's country of origin\n"
+   name = gets.chomp
+
+   
+
 
    while !name.empty?  do
 
@@ -49,6 +56,8 @@ def print_names(names)
    i = 0
    while i < names.length    
 #   names.each_with_index do |student,i|
+
+# this suffix business, I could equally well put a comma at the end of every clause then strip it off just before printing.
       student = names[i]
       suffix = '' 
       comma = ''
@@ -58,7 +67,7 @@ def print_names(names)
       end   
 
       if student[:name].length < 12 then 
-          suffix =  suffix + comma + ' Less than 12'
+          suffix =  suffix + comma + ' less than 12 letters'
           comma = ','
       end  
 
