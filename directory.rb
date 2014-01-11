@@ -1,3 +1,5 @@
+#!/Users/roygardiner/.rvm/rubies/ruby-2.0.0-p353/bin/ruby
+
 # Define a list of names
 
 students = [
@@ -21,7 +23,7 @@ students = [
 
 def input_students
 
-   puts "please enter the names of the Students"
+   print "please enter the names of the Students\n"
    puts "to finish, just hit return twice"
    
    students = []
@@ -42,8 +44,9 @@ def print_header
    puts "==========================================="
 end
 
-def print(names)
+def print_names(names)
    names.each do |student|
+   	
       puts "#{student[:name]} in #{student[:cohort]} cohort"
    end 
 end
@@ -55,5 +58,5 @@ end
 students = input_students
 
 print_header
-print(students)
+print_names(students)
 print_footer(students)
