@@ -45,14 +45,31 @@ def print_header
 end
 
 def print_names(names)
-   names.each do |student|
-   	
-      print "#{student[:name]} in #{student[:cohort]} cohort\n"
+
+   i = 0
+   while i < names.length    
+#   names.each_with_index do |student,i|
+      student = names[i]
+      suffix = '' 
+      comma = ''
+      if student[:name].chr == 'f' then 
+          suffix =   suffix + comma + ' 1st letter "f"' 
+          comma = ','
+      end   
+
+      if student[:name].length < 12 then 
+          suffix =  suffix + comma + ' Less than 12'
+          comma = ','
+      end  
+
+
+      print "#{i+1}: #{student[:name]} in #{student[:cohort]} cohort." + suffix + "\n"
+      i = i + 1
    end 
 end
 
 def print_footer(names)
-   print "Overall we have #{names.length} fine Students"
+   print "Overall we have #{names.length} fine Students\n"
 end  
 
 students = input_students
